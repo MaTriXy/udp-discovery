@@ -36,7 +36,29 @@ the requester. This is sent directly to the requester, *not* as a broadcast.
 
 ---
 
-# The Code
+# Gradle Dependency
+
+[ ![jCenter](https://api.bintray.com/packages/drummer-aidan/maven/udpdiscovery/images/download.svg) ](https://bintray.com/drummer-aidan/maven/udpdiscovery/_latestVersion)
+[![Build Status](https://travis-ci.org/afollestad/udpdiscovery.svg)](https://travis-ci.org/afollestad/udpdiscovery)
+
+The Gradle dependency is available via [jCenter](https://bintray.com/drummer-aidan/maven/udpdiscovery/view).
+jCenter is the default Maven repository used by Android Studio.
+
+### Dependency
+
+Add this to your module's `build.gradle` file:
+
+```gradle
+dependencies {
+	// ... other dependencies
+
+	compile 'com.afollestad:udpdiscovery:1.0.0'
+}
+```
+
+---
+
+# Usage
 
 This library makes managing these messages and broadcasts easy, along with parsing the data.
 
