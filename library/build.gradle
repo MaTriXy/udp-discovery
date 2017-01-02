@@ -1,15 +1,25 @@
 apply plugin: 'com.android.library'
 apply plugin: 'com.neenbedankt.android-apt'
 
+ext {
+    PUBLISH_GROUP_ID = 'com.afollestad'
+    PUBLISH_ARTIFACT_ID = 'udpdiscovery'
+    PUBLISH_VERSION = '1.0.0'
+    PUBLISH_VERSION_CODE = 1
+    SUPPORT_LIBRARY_VERSION = '25.1.0'
+    BUILD_TOOLS = "24.0.3"
+    TARGET_SDK = 25
+}
+
 android {
-    compileSdkVersion 25
-    buildToolsVersion "24.0.3"
+    compileSdkVersion TARGET_SDK
+    buildToolsVersion BUILD_TOOLS
 
     defaultConfig {
         minSdkVersion 16
-        targetSdkVersion 25
-        versionCode 1
-        versionName "1.0"
+        targetSdkVersion TARGET_SDK
+        versionCode PUBLISH_VERSION_CODE
+        versionName PUBLISH_VERSION
     }
     buildTypes {
         release {
@@ -27,8 +37,8 @@ repositories {
 dependencies {
     testCompile 'junit:junit:4.12'
 
-    compile 'com.android.support:support-annotations:25.1.0'
-    compile 'com.android.support:support-v13:25.1.0'
+    compile 'com.android.support:support-annotations:' + SUPPORT_LIBRARY_VERSION
+    compile 'com.android.support:support-v13' + SUPPORT_LIBRARY_VERSION
 
     compile 'com.google.code.gson:gson:2.8.0'
     compile 'com.google.auto.value:auto-value:1.3'
@@ -39,3 +49,5 @@ dependencies {
     apt 'com.ryanharter.auto.value:auto-value-gson:0.4.5'
     provided 'com.ryanharter.auto.value:auto-value-gson:0.4.5'
 }
+
+apply from: 'https://raw.githubusercontent.com/afollestad/aidanfollestad.com/master/android-lib-release.gradle'
