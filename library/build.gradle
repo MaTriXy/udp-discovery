@@ -15,6 +15,9 @@ android {
     compileSdkVersion TARGET_SDK
     buildToolsVersion BUILD_TOOLS
 
+    lintOptions {
+        abortOnError false
+    }
     defaultConfig {
         minSdkVersion 16
         targetSdkVersion TARGET_SDK
