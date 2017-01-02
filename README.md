@@ -39,7 +39,7 @@ the requester. This is sent directly to the requester, *not* as a broadcast.
 # Gradle Dependency
 
 [ ![jCenter](https://api.bintray.com/packages/drummer-aidan/maven/udpdiscovery/images/download.svg) ](https://bintray.com/drummer-aidan/maven/udpdiscovery/_latestVersion)
-[![Build Status](https://travis-ci.org/afollestad/udpdiscovery.svg)](https://travis-ci.org/afollestad/udpdiscovery)
+[![Build Status](https://travis-ci.org/afollestad/udp-discovery.svg)](https://travis-ci.org/afollestad/udp-discovery)
 
 The Gradle dependency is available via [jCenter](https://bintray.com/drummer-aidan/maven/udpdiscovery/view).
 jCenter is the default Maven repository used by Android Studio.
